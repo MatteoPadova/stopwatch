@@ -44,9 +44,19 @@ window.onload = function () {
 	  appendSecs.innerHTML = secs;
 	}
 
+	var lapIndex = 0;
 	btnLap.onclick = function() {
-	   appendLapTens.innerHTML = appendTens.innerHTML;
-	   appendLapSecs.innerHTML = appendSecs.innerHTML;
+	   	appendLapTens.innerHTML = appendTens.innerHTML;
+	  	appendLapSecs.innerHTML = appendSecs.innerHTML;
+	  	lapIndex++
+	   	if (lapIndex > 3 ){
+		lapIndex = 1;
+		document.getElementById("lapTime").innerHTML = '';
+		}
+	   	var createLapTime = document.createElement("li");
+		createLapTime.setAttribute("value", ""+[lapIndex]+"");
+		createLapTime.innerHTML = " Lap "+[lapIndex]+" : "+appendSecs.innerHTML+" "+appendTens.innerHTML+""
+		document.getElementById("lapTime").appendChild(createLapTime);
 	 }
 	
 	 
