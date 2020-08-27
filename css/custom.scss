@@ -154,7 +154,7 @@ a{
 	position: absolute;
 	left: 50%;
 	line-height: 90px;
-	top: 5%;
+	top: 15%;
 	@include break-medium(){
 		left:auto;
 		right: 1%;
@@ -225,7 +225,7 @@ a{
 	
 }
 #btn-start, #btn-stop, #btn-reset, #btn-lap{
-	cursor:pointer;
+cursor:pointer;
 font-size: 8px;
 text-transform: uppercase;
 padding: 3px 7px;
@@ -237,6 +237,37 @@ border: none;
 border-radius:5px;
 }
 
+#buy{
+@include opacity(0);
+cursor:pointer;
+font-size: 16px;
+text-transform: uppercase;
+padding: 20px 20px;
+width: 100px;
+background: transparent;
+color: $black;
+border: 3px solid $black;
+border-radius:10px;
+margin-top: 50px;
+line-height: initial;
+text-align: center;
+text-decoration:none;
+display:block;
+@include transition(0.3s ease-in-out all);
+@include break-medium(){
+	margin-top:15px;
+	padding:10px 10px;
+	font-size:12px;
+}
+@include break-tiny(){
+	margin:0 auto;
+}
+&:hover{
+	@include transition(0.3s ease-in-out all);
+	color: white;
+	background:$black;
+}
+}
 
 
 

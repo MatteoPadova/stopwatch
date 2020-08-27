@@ -91,7 +91,7 @@ a {
   position: absolute;
   left: 50%;
   line-height: 90px;
-  top: 5%; }
+  top: 15%; }
   @media (max-width: 1200px) {
     .brand {
       left: auto;
@@ -181,6 +181,43 @@ a {
   color: white;
   border: none;
   border-radius: 5px; }
+
+#buy {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  width: 100px;
+  background: transparent;
+  color: #000000;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  margin-top: 50px;
+  line-height: initial;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  -moz-transition: ease-in-out 0.3s all;
+  -o-transition: ease-in-out 0.3s all;
+  -webkit-transition: ease-in-out 0.3s all;
+  transition: ease-in-out 0.3s all; }
+  @media (max-width: 1200px) {
+    #buy {
+      margin-top: 15px;
+      padding: 10px 10px;
+      font-size: 12px; } }
+  @media (max-width: 768px) {
+    #buy {
+      margin: 0 auto; } }
+  #buy:hover {
+    -moz-transition: ease-in-out 0.3s all;
+    -o-transition: ease-in-out 0.3s all;
+    -webkit-transition: ease-in-out 0.3s all;
+    transition: ease-in-out 0.3s all;
+    color: white;
+    background: #000000; }
 
 /*************** ANIMATION ******************/
 @-moz-keyframes brandText {

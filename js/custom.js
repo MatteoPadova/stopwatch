@@ -22,6 +22,7 @@ window.onload = function () {
 	}, 1500)
 	setTimeout(function(){
 		document.getElementById("thirdText").classList.add('brandText');
+		document.getElementById("buy").classList.add('brandText');
 	}, 2000)
 	
 
